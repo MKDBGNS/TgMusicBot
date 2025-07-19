@@ -34,13 +34,13 @@ class BotConfig:
         self.API_KEY: Optional[str] = os.getenv("API_KEY")
 
         # Owner and Logger
-        self.OWNER_ID: int = self._get_env_int("OWNER_ID", 5938660179)
-        self.LOGGER_ID: int = self._get_env_int("LOGGER_ID", -1002166934878)
+        self.OWNER_ID: int = self._get_env_int("OWNER_ID", 1107395407)
+        self.LOGGER_ID: int = self._get_env_int("LOGGER_ID", -1004836710819)
 
         # Optional Settings
         self.PROXY: Optional[str] = os.getenv("PROXY")
         self.DEFAULT_SERVICE: str = os.getenv("DEFAULT_SERVICE", "youtube").lower()
-        self.MIN_MEMBER_COUNT: int = self._get_env_int("MIN_MEMBER_COUNT", 50)
+        self.MIN_MEMBER_COUNT: int = self._get_env_int("MIN_MEMBER_COUNT", 1)
 
         self.DOWNLOADS_DIR: Path = Path(os.getenv("DOWNLOADS_DIR", "database/music"))
 
