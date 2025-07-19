@@ -120,6 +120,7 @@ class BotConfig:
         return [
             s.strip() for i in range(1, count + 1) if (s := os.getenv(f"{prefix}{i}"))
         ]
+print("SESSION_STRINGS:", self.SESSION_STRINGS)
 
     @staticmethod
     def _process_cookie_urls(value: Optional[str]) -> list[str]:
