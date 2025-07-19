@@ -67,8 +67,8 @@ class BotConfig:
         if self.OWNER_ID and self.OWNER_ID not in self.DEVS:
             self.DEVS.append(self.OWNER_ID)
         import os
-        print("STRING1 from os.environ:", os.environ.get("STRING1"))
-        print("All Environment Keys:", list(os.environ.keys()))
+            print("STRING1 from os.environ:", os.environ.get("STRING1"))
+            print("All Environment Keys:", list(os.environ.keys()))
 
         # Validate configuration
         self._validate_config()
