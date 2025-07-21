@@ -122,22 +122,23 @@ class BotConfig:
         return [
             s.strip() for i in range(1, count + 1) if (s := os.getenv(f"{prefix}{i}"))
         ]
-print("SESSION_STRINGS:", self.SESSION_STRINGS)
+        print("SESSION_STRINGS:", self.SESSION_STRINGS)
 
-@staticmethod
-def _process_cookie_urls(value: Optional[str]) -> list[str]:
-    """
-    Parse space- or comma-separated URLs into a list.
+    
+    @staticmethod
+    def _process_cookie_urls(value: Optional[str]) -> list[str]:
+        """
+        Parse space- or comma-separated URLs into a list.
 
-    Args:
-        value (Optional[str]): Raw COOKIES_URL env value.
+        Args:
+            value (Optional[str]): Raw COOKIES_URL env value.
 
-    Returns:
-        List[str]: List of cleaned URL strings.
-    """
-    if not value:
-        return []
-    return [url.strip() for url in value.replace(",", " ").split() if url.strip()]
+        Returns:
+            List[str]: List of cleaned URL strings.
+        """
+        if not value:
+            return []
+        return [url.strip() for url in value.replace(",", " ").split() if url.strip()]
 
     def _validate_config(self) -> None:
         """Validate all required environment configuration values."""
