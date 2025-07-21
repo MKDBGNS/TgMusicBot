@@ -116,7 +116,7 @@ class BotConfig:
             prefix (str): Prefix of the environment variable.
             count (int): Number of session keys to check.
 
-        Returns:
+        Returns: 
             list[str]: A list of valid session strings.
         """
         return [
