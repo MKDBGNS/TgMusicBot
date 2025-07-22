@@ -140,7 +140,7 @@
         },
         "DEVS": {
             "description": "User ID's of developers",
-            "value": "7756875370",
+            "value": "",
             "required": false
         }
     },
