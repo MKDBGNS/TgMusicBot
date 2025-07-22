@@ -120,12 +120,12 @@
         },
         "SUPPORT_GROUP": {
             "description": "Telegram Group Link",
-            "value": "https://t.me/GuardxSupport",
+            "value": "",
             "required": false
         },
         "SUPPORT_CHANNEL": {
             "description": "Telegram Channel Link",
-            "value": "https://t.me/FallenProjects",
+            "value": "",
             "required": false
         },
         "AUTO_LEAVE": {
